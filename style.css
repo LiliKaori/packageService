@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --gray-50: #F8FAFC;
+    --gray-100: #F1F5F9;
+    --gray-200: #E2E8F0;
+    --gray-300: #CBD5E1;
+    --gray-400: #94A3B8;
+    --gray-500: #64748B;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1E293B;
+    --gray-900: #0F172A;
+    --green-100: #04D361;
+    --green-200: #1B873F;
+    --purple-100: #996DFF;
+    --purple-200: #7C3AED;
+    --white: #ffffff;
+    --orange: #FBA94C;
+    --ggs: 6;
+
+
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: var(--gray-600);
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 49px;
+    color: var(--gray-800);
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--purple-200);
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+}
+
+button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-800);
+    padding: 16px;
+}
+
+li {
+    padding-left: 30px;
+    list-style-type: none;
+    background-image: url("assets/check-tick-icon-14166.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+
+.gg-check {
+    color: #04D361;
+    height: 5px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.essentials {
+    padding: 48px 32px 32px;
+    width: auto;
+    height: 454px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ultimate {
+    width: auto;
+    height: 454px;
+    border: 1px solid var(--gray-200);
+}
+
+.enterprise {
+    width: auto;
+    height: 454px;
+    border: 1px solid var(--gray-200);
+}
