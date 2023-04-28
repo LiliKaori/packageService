@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/service-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <title>Pacote de Serviços</title>
+    
 </head>
-
+<header>
+    <h1>Contrate o melhor pacote!</h1>
+</header>
 <body>
     <div class="container">
-        <div class="essentials">
+        <div class="boxLight">
             <h2>Para você começar</h2>
-            <h1>Essentials R$ 19,97/mês</h1>
-            <button>Assinar agora</button>
+            <div class="price">
+                <h1>Essentials </h1>
+                <h4>R$<b><span>19,97</span>/mês</b></h4>
+            </div>
+            
+            <button class="buttonLigth">Assinar agora</button>
             <hr />
             <ul>
                 <li>
@@ -31,11 +37,50 @@
             </ul>
             <image></image>
         </div>
-        <div class="ultimate"></div>
-        <div class="enterprise"></div>
+        
+        <div class="boxDark">
+            
+            <h3 class="useful">Mais vantajoso</h3>
+            
+            <h2>Para você decorar</h2>
+            <div class="price">
+                <h1 class="fontWhite">Ultimate</h1>
+                <h4 class="fontWhite">R$<b><span>29,97</span>/mês</b></h4>
+            </div>
+            
+            <button class="buttonDark">Assinar agora</button>
+            <hr />
+            <ul>
+                <li>
+                    <p>Usuários ilimitados</p>
+                </li>
+                <li>
+                    <p>Suporte 24/7</p>
+                </li>
+                <li>
+                    <p>CSM Dedicado</p>
+                </li>
+                <li>
+                    <p>Treinamentos</p>
+                </li>
+            </ul>
+            <image></image>
+        </div>        
 
+        <div class="boxLight">
+            <h2>Para sua empresa</h2>
+            <h1>Enterprise</h1>                
+            
+            <button class="buttonLigth">Fale com a gente</button>
+            <hr />
+            <div class="description">
+                <img src="./assets/check-tick-icon-14166.png"/>
+            <p>Plano customizado especialmente para a necessidade de seu negocio</p>
+            </div>
+            
+            <image></image>
+        </div>
     </div>
-
 </body>
 
 </html>

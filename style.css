@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
-}
-
 :root {
     --gray-50: #F8FAFC;
     --gray-100: #F1F5F9;
@@ -22,9 +15,22 @@
     --purple-200: #7C3AED;
     --white: #ffffff;
     --orange: #FBA94C;
-    --ggs: 6;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;    
+}
 
+.container {
+    background-color: var(--gray-100);
+    height: calc(100vh - 119px);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -34,6 +40,8 @@ p {
     line-height: 24px;
     letter-spacing: 0.06em;
     color: var(--gray-600);
+    width: auto;
+    max-width: 290px;
 }
 
 h1 {
@@ -42,6 +50,7 @@ h1 {
     font-size: 32px;
     line-height: 49px;
     color: var(--gray-800);
+    margin-right: 10px;
 }
 
 h2 {
@@ -64,13 +73,76 @@ h3 {
     color: var(--gray-900);
 }
 
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--gray-800);
+}
+
 button {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
-    color: var(--gray-800);
+    line-height: 24px;    
     padding: 16px;
+    border-radius: 4px;
+    cursor: pointer;    
+    width: 260px;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+header{
+    padding: 50px 20px 20px;
+    text-align: center;
+    background-color: var(--gray-100);
+}
+
+.boxLight {
+    padding: 48px 32px;
+    width: 320px;    
+    margin: 30px 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+}
+
+.boxLight:hover{
+    border: 1px solid var(--purple-100);
+    margin: 10px 20px 50px;
+    
+}
+
+.price {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+span{
+    font-size: 24px;
+}
+
+.boxLight>hr{
+    border: 1px solid var(--gray-200);
+}
+
+.buttonLigth { 
+    background-color: transparent;
+    color: var(--gray-800);
+    border: 1px solid var(--gray-800);
+}
+
+.buttonLigth:hover{
+    background-color: var(--gray-800);
+    color: var(--white);
 }
 
 li {
@@ -80,42 +152,79 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
+    margin-bottom: 15px;
 }
 
-
-.gg-check {
-    color: #04D361;
-    height: 5px;
-}
-
-.container {
-    height: 100vh;
+.description{
     display: flex;
-    gap: 32px;
     align-items: center;
-    justify-content: space-around;
 }
 
-.essentials {
-    padding: 48px 32px 32px;
-    width: auto;
-    height: 454px;
-    background: var(--white);
-    border: 1px solid var(--gray-200);
+img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.boxDark {
+    padding: 48px 32px calc(48px - 65px);
+    width: 320px;
+    margin: 30px 20px;
+    background: var(--gray-900);    
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.ultimate {
-    width: auto;
-    height: 454px;
-    border: 1px solid var(--gray-200);
+.boxDark:hover{    
+    margin: 10px 20px 50px;
 }
 
-.enterprise {
-    width: auto;
-    height: 454px;
-    border: 1px solid var(--gray-200);
+.boxDark > div > h1, 
+.boxDark > div > h4{
+    color:var(--white);
+}
+ 
+.boxDark > h2{
+    color:var(--purple-100);
+}
+
+.boxDark>hr{
+    border: 1px solid var(--gray-700);
+}
+
+.buttonDark { 
+    background-color: var(--purple-100);
+    color: var(--white);
+    border: none;
+}
+
+.buttonDark:hover { 
+    background-color: var(--purple-200);    
+}
+
+.boxDark>ul>li>p{
+    color:var(--gray-300);
+}
+
+.useful{
+    background-color: var(--orange);
+    width: 150px;
+    border-radius: 6px;    
+    color: var(--gray-900);
+    text-align: center;
+    padding: 8px 16px;
+    position: relative;    
+    top: -65px;
+    left: calc(50% - 150px/2);
+    margin-bottom: -65px;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
 }
